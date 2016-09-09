@@ -28,10 +28,10 @@ Where:
      sip port
 
    -c <string>,  --calluri <string>
-     call uri
+     call uri (sip:#-###-###-####@sip.anveo.com:5010)
 
    -s <string>,  --sipprovider <string>
-     sip provider server
+     sip provider domain name
 
    --,  --ignore_rest
      Ignores the rest of the labeled arguments following this flag.

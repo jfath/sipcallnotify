@@ -320,11 +320,11 @@ int main(int argc, char** argv)
         TCLAP::CmdLine cmd("Make a sip call and play a notification message", ' ', "1.0");
 
         // Define arguments and add to the CmdLine object
-        TCLAP::ValueArg<std::string> providerArg("s", "sipprovider", "sip provider server", false, "sip.anveo.com", "string", cmd);
-        TCLAP::ValueArg<std::string> calluriArg("c", "calluri", "call uri", false, "sip:#-###-###-####@sip.anveo.com:5010", "string", cmd);
+        TCLAP::ValueArg<std::string> providerArg("s", "sipprovider", "sip provider domain name", false, "sip.anveo.com", "string", cmd);
+        TCLAP::ValueArg<std::string> calluriArg("c", "calluri", "call uri (sip:#-###-###-####@sip.anveo.com:5010)", true, "sip:#-###-###-####@sip.anveo.com:5010", "string", cmd);
         TCLAP::ValueArg<int> portArg("o", "port", "sip port", false, 5010, "int", cmd);
-        TCLAP::ValueArg<std::string> usernameArg("u", "user", "username from sip provider", false, "YOURUSERNAME", "string", cmd);
-        TCLAP::ValueArg<std::string> passwordArg("p", "password", "password from sip provider", false, "YOURPASSWORD", "string", cmd);
+        TCLAP::ValueArg<std::string> usernameArg("u", "user", "username from sip provider", true, "YOURUSERNAME", "string", cmd);
+        TCLAP::ValueArg<std::string> passwordArg("p", "password", "password from sip provider", true, "YOURPASSWORD", "string", cmd);
         TCLAP::ValueArg<std::string> mediafileArg("m", "mediafile", "path of .wav file", false, "sipcallnotify.wav", "string", cmd);
         TCLAP::ValueArg<int> repeatArg("r", "repeat", "number of times to play media file", false, 1, "int", cmd);
         TCLAP::ValueArg<int> timeoutArg("t", "timeout", "max call time in seconds", false, 20, "int", cmd);
