@@ -214,6 +214,11 @@ int DoRoboCall(GlobalData &globals_) throw(Error)
 
         // Init library
         EpConfig ep_cfg;
+        //!!!Things we can do to change logging
+        //ep_cfg.msgLogging = 1;
+        //ep_cfg.logConfig.level = 5;
+        //ep_cfg.consoleLevel = 4;
+        //ep_cfg.filename = "sipcallnotify.log"
         ep.libInit(ep_cfg);
 
         // Create transport
