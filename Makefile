@@ -5,7 +5,7 @@ PJBASE=../pjproject-2.5.5
 include $(PJBASE)/build.mak
 
 #Set to 1 for debug builds
-DEBUG := 1
+DEBUG := 0
 
 ifeq ($(DEBUG),1)
   CFLAGSD := -g -Og
