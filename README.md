@@ -71,4 +71,8 @@ __________________________________________________________________
   
   The mediafile must be a 16 bit mono PCM  
 
+  Alsa is required on the host system.  You can use a dummy sound card if the machine doesn't have sound hardware  
+    modprobe snd-dummy  
+ 
+
   
