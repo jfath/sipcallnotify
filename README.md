@@ -74,7 +74,7 @@ __________________________________________________________________
   Alsa is required on the host system.  You can use a dummy sound card if the machine doesn't have sound hardware  
     modprobe snd-dummy  
   
-  Linux x64 binary compiled om Ubuntu 16.04 available at http://unser.jfath.net/public/sipcallnotify  
+  Linux x64 binary compiled on Ubuntu 16.04 available at http://unser.jfath.net/public/sipcallnotify  
 
 
  
