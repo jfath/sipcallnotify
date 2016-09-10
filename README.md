@@ -73,6 +73,8 @@ __________________________________________________________________
 
   Alsa is required on the host system.  You can use a dummy sound card if the machine doesn't have sound hardware  
     modprobe snd-dummy  
+
+  The user running sipcallnotify must be a member of the audio group. Add the user, then log out/in for the change to take affect.  
   
   Linux x64 binary compiled on Ubuntu 16.04 available at http://unser.jfath.net/public/sipcallnotify  
 
